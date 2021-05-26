@@ -1,0 +1,9 @@
+{{define "delete"}}
+
+<p>{{.Content}}</p>
+
+<form method="POST" action="/todo/delete/{{.ID}}">
+    <button type="submit">Delete</button>
+</form>
+
+{{end}}

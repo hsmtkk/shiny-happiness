@@ -1,0 +1,14 @@
+{{define "getall"}}
+
+<ul>
+{{range $i,$task := .}}
+  <li>
+      <a href="/todo/{{$task.ID}}">{{$task.Content}}</a>
+      <a href="/todo/delete/{{$task.ID}}">Delete</a>
+  </li>
+{{end}}
+</ul>
+
+<a href="/todo/new">New</a>
+
+{{end}}
